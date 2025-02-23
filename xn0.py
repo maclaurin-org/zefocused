@@ -4,7 +4,7 @@ import os  # Use environment variables
 
 app = Flask(__name__)
 
-WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/1342837328011460731/l0ZnsTLQTe_sOe6QwrSrKoGShFqkeO7lBJcBHJibd1ASQ_yqZlr1_65xOq8ZMJzmn5k1")  # Secure webhook
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")  # Secure webhook
 
 @app.route('/send', methods=['POST'])
 def send_webhook():
